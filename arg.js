@@ -2,10 +2,12 @@ var fs = require('fs');
 var jsdom = require('jsdom');
 var { JSDOM } = jsdom;
 
-var origin = process.argv[2];
+// input and destination files (node arguments)
+var input = process.argv[2];
 var dest = process.argv[3];
 
-fs.readFile(origin, 'utf8', function(err, data) {
+// Read input and write front matter as output
+fs.readFile(input, 'utf8', function(err, data) {
   if (err) {
     return console.log(err);
   }
@@ -61,12 +63,10 @@ fs.readFile(origin, 'utf8', function(err, data) {
       }
 
     } else if (el.nodeName === 'META' && el.attributes.hasOwnProperty('property')) {
-      //console.log(el + ' has property');
-      // console.log(el.attributes[1].nodeName);
       function find() {
         for (var i = 0; i < el.attributes.length; i++) {
           if (el.attributes[i].nodeName === 'property') {
-            console.log(el.attributes[i].nodeName);
+            //console.log(el.attributes[i].nodeName);
             return (el.attributes[i].nodeValue)
           }
         }
@@ -90,7 +90,7 @@ fs.readFile(origin, 'utf8', function(err, data) {
     if (err) {
       console.log(err);
     }
-    console.log('Succesfully wrote front matter from ' + origin + ' to ' + dest);
+    console.log('Succesfully wrote front matter from ' + input + ' to ' + dest);
   });
 
   console.log(fm);

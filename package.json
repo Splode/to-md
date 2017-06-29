@@ -12,5 +12,9 @@
     "utility"
   ],
   "author": "Christopher Murphy",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jsdom": "^11.0.0",
+    "to-markdown": "^3.0.4"
+  }
 }
