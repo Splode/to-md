@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app="ideum">
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1498669293,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"5dca1a0664a76b73aa5dd1d32debe54d",petok:"649041aff1d10c4bbba8be48767b4fea1718d970-1498750389-1800",zone:"ideum.com",rocket:"0",apps:{"abetterbrowser":{"ie":"9","opera":"25","chrome":"30","safari":"8","firefox":"40"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=85b614c0f6/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script>
+  // get Browser and OS info and put it in the html tag 
+  var b = document.documentElement;
+    b.setAttribute('data-useragent',  navigator.userAgent);
+    b.setAttribute('data-platform', navigator.platform );
+    b.className += ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':'');
+</script>
+<head>
+<meta name="robots" content="follow"><meta name="googlebot" content="index">
+ 
+<meta charset="UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1039.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="/wp-content/themes/ideum/images/favicon.ico"/>
+<link rel="apple-touch-icon" href="/wp-content/themes/ideum/images/iPhoneIcon.png"/>
+<meta name="google-site-verification" content="brxnLtsKoz7BBFWkh_keSUHpdLYn7ZDnH8WNzvSke8Q"/>
+<title>Ideum - Exhibit Design + Multitouch Software and Hardware</title>
+<meta name="description" content="Ideum develops innovative hardware and software and is focused on the future of Human Computer Interaction - HCI. Our creative and collaborative approach to custom exhibit design produces memorable visitor experiences."/>
+<meta property="og:site_name" content="Ideum - Exhibit Design + Multitouch Software and Hardware"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://archive.ideum.com/"/>
+<meta property="og:title" content="Ideum - Exhibit Design + Multitouch Software and Hardware"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://archive.ideum.com/wp-content/uploads/2014/09/dinoStomp.jpg"/>
+<meta property="og:description" content="Ideum develops innovative hardware and software and is focused on the future of Human Computer Interaction - HCI. Our creative and collaborative approach to custom exhibit design produces memorable visitor experiences."/>
+<link rel="alternate" type="application/rss+xml" title="Ideum - Exhibit Design + Multitouch Software and Hardware &raquo; Blog Feed" href="http://archive.ideum.com/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="Ideum - Exhibit Design + Multitouch Software and Hardware &raquo; Creative Services Feed" href="http://archive.ideum.com/creative-services/feed/"/>
+<link rel="pingback" href="http://archive.ideum.com/wordpress/xmlrpc.php"/>
+ 
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"+cU1j1a8Dy002H", domain:"ideum.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=+cU1j1a8Dy002H" style="display:none" height="1" width="1" alt=""/></noscript>
+ 
+ 
+<script type="text/javascript">
+	function yesnoCheck() {
+		if (document.getElementById('contact-by-phone-yes').checked) {
+			document.getElementById('ifphoneYes').style.display = 'block';
+		} else {
+			document.getElementById('ifphoneYes').style.display = 'none';
+		}
+	}
+</script>
+ 
+ 
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1700940810165118');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1700940810165118&ev=PageView&noscript=1"/>
+</noscript>
+ 
+ 
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1072509777/?label=lKb-CJ638AIQ0ea0_wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+ 
+<link rel='dns-prefetch' href='//s.w.org'/>
+<link rel="alternate" type="application/rss+xml" title="Ideum - Exhibit Design + Multitouch Software and Hardware &raquo; Home Comments Feed" href="http://archive.ideum.com/home/feed/"/>
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/archive.ideum.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-0.1em!important;background:none!important;padding:0!important;}</style>
+<link rel='stylesheet' id='simple-banner-style-css' href='/wp-content/plugins/simple-banner/simple-banner.css?ver=4.7.3' type='text/css' media='all'/>
+<link rel='stylesheet' id='select2-css' href='/wp-content/themes/ideum/bower_components/select2/select2.css?ver=4.7.3' type='text/css' media='all'/>
+<link rel='stylesheet' id='angular-carousel-css' href='/wp-content/themes/ideum/bower_components/ideum-angular-carousel/dist/angular-carousel.css?ver=4.7.3' type='text/css' media='all'/>
+<link rel='stylesheet' id='ideum-site-css' href='/wp-content/themes/ideum/style.css?ver=4.7.3' type='text/css' media='all'/>
+<script type='text/javascript' src='http://archive.ideum.com/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://archive.ideum.com/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/simple-banner/simple-banner.js?ver=4.7.3'></script>
+<link rel='https://api.w.org/' href='http://archive.ideum.com/wp-json/'/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://archive.ideum.com/wordpress/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://archive.ideum.com/wordpress/wp-includes/wlwmanifest.xml"/>
+<meta name="generator" content="WordPress 4.7.3"/>
+<link rel="canonical" href="http://archive.ideum.com/"/>
+<link rel='shortlink' href='http://archive.ideum.com/'/>
+<link rel="alternate" type="application/json+oembed" href="http://archive.ideum.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Farchive.ideum.com%2F"/>
+<link rel="alternate" type="text/xml+oembed" href="http://archive.ideum.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Farchive.ideum.com%2F&#038;format=xml"/>
+<style type="text/css" media="screen">.simple-banner{background:#9C3022};</style><style type="text/css" media="screen">.simple-banner .simple-banner-text{color:#ccc};</style><style type="text/css" media="screen">.simple-banner .simple-banner-text a{color:#fff};</style><script type="text/javascript">jQuery(document).ready(function() {
+		var bannerSpan = document.getElementById("simple-banner");
+		bannerSpan.innerHTML = "<div class=simple-banner-text><span>You are viewing the ideum site archive. To view the current site, please <a style='border-bottom:1px dotted #fff' href='http://ideum.com'>go here</a>.</span></div>"
+		});
+		</script>
+<!-- end html-header -->            
+		<!-- add product print stylesheet -->
+		<link href="/wp-content/themes/ideum/css/print.css" media="print" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="home page-template-default page page-id-11878 home" data-template="base.twig">
+    
+    <img class="print-only ideum-logo" src="/wp-content/themes/ideum/images/logo.png" />
+
+    <header id="header" ng-controller="headerCtrl">
+      <section class="social-media-links">
+
+  <div class="social-interior">
+
+    <div class="tabs">
+      
+            <h2 class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16713"><a href="/blog/">Blog</a></h2>
+            <h2 class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16715"><a href="/our-story/">Our Story</a></h2>
+      
+    </div>
+
+    <ul class="social-icons">
+      <li><a href="http://multitouch-labs.tumblr.com/" target="_blank" title="Ideum Labs on Tumblr"><i class="icon-tumblr"></i></a></li>
+      <li><a href="https://instagram.com/ideum" target="_blank" title="Ideum on Instagram"><i class="icon-instagram"></i></a></li>
+      <li><a href="https://www.facebook.com/ideum" target="_blank" title="Ideum on Facebook"><i class="icon-facebook"></i></a></li>
+      <li><a href="https://twitter.com/ideum" target="_blank" title="Ideum on Twitter"><i class="icon-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/company/ideum" target="_blank" title="Ideum on LinkedIn"><i class="icon-linkedin"></i></a></li>
+      <li><a href="https://plus.google.com/+Ideum/posts" target="_blank" title="Ideum on Google+"><i class="icon-gplus"></i></a></li>
+      <li><a href="https://www.youtube.com/user/multitouchexhibits/" target="_blank" title="Ideum on YouTube"><i class="icon-youtube"></i></a></li>
+      <li><a href="https://vimeo.com/ideum" target="_blank" title="Ideum on Vimeo"><i class="icon-vimeo"></i></a></li>
+      <li><a href="https://www.flickr.com/photos/ideum/" target="_blank" title="Ideum on Flickr"><i class="icon-flickr"></i></a></li>
+      <li><a href="https://www.pinterest.com/ideum/" target="_blank" title="Ideum on Pinterest"><i class="icon-pinterest"></i></a></li>
+      <li><a href="/?feed=rss"><i class="icon-rss" target="_blank" title="Ideum RSS Feed"></i></a></li>
+    </ul>
+
+  </div>
+
+</section>
+
+<div class="main">
+
+  <h1 class="logo">
+    <a href="/" title="Return to Ideum Home Page">Ideum - Exhibit Design + Multitouch Software and Hardware</a>
+  </h1>
+
+  <nav>
+
+    <button ng-click="toggleMenu()"><i class="icon-menu"></i></button>
+
+    <ul class="primary-nav">
+            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-16700"><a href="/creative-services/">Creative Services</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16704"><a href="/touch-tables/">Multitouch Tables</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16721"><a href="/touch-walls/">Touch Walls</a></li>
+            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-30874"><a href="https://www.ideum.com/contact">Contact</a></li>
+          </ul>
+
+  </nav>
+
+</div>
+
+
+  
+    <!-- begin slides -->
+
+    <style>
+      /* begin pseudo-dynamic styles for front-page slider */
+              .slider-item-article.slide-0 { background: #000000 url('/wp-content/uploads/2014/09/dinoStomp.jpg') no-repeat center center; background-size: auto 800px; }
+        .slider-item-article.slide-0 h1, .slider-item-article.slide-0 h1 a, .slider-item-article.slide-0 h1 a:hover, .slider-item-article.slide-0 h2, .slider-item-article.slide-0 p, .slider-item-article.slide-0 a { color: #ffffff; text-shadow: 2px 2px 6px #000; font-weight: 600;}
+        .slider-item-article.slide-0 .page-intro-inner { float:Left;text-align:Left; } 
+              .slider-item-article.slide-1 { background: #000000 url('/wp-content/uploads/2014/09/inka-1800x800-2.jpg') no-repeat center center; background-size: auto 800px; }
+        .slider-item-article.slide-1 h1, .slider-item-article.slide-1 h1 a, .slider-item-article.slide-1 h1 a:hover, .slider-item-article.slide-1 h2, .slider-item-article.slide-1 p, .slider-item-article.slide-1 a { color: #FFFFFF; text-shadow: 2px 2px 6px #000; font-weight: 600;}
+        .slider-item-article.slide-1 .page-intro-inner { float:Left;text-align:Left; } 
+              .slider-item-article.slide-2 { background: #000000 url('/wp-content/uploads/2014/09/lowell-image-02.jpg') no-repeat center center; background-size: auto 800px; }
+        .slider-item-article.slide-2 h1, .slider-item-article.slide-2 h1 a, .slider-item-article.slide-2 h1 a:hover, .slider-item-article.slide-2 h2, .slider-item-article.slide-2 p, .slider-item-article.slide-2 a { color: #ffffff; text-shadow: 2px 2px 6px #000; font-weight: 600;}
+        .slider-item-article.slide-2 .page-intro-inner { float:Right;text-align:Right; } 
+            /* end pseudo-dynamic styles for front-page slider */
+      .slider-item-article .page-intro-inner h1 { text-transform: capitalize; }
+    </style>
+
+    <section class="front-page-slider">
+
+     <ul rn-carousel rn-carousel-control rn-carousel-indicator rn-carousel-buffered rn-carousel-auto-slide="10">
+
+        
+          <li class="slider item Left">
+
+            <article class="slider-item-article slide-0">
+
+              <img class="slider-spacer-image" src="/wp-content/uploads/2014/09/dinoStomp.jpg">
+
+              <div class="slide-text-wrap">
+
+                <div class="slide-text-content Left">
+
+                    <div class="page-intro">
+<div class="page-intro-inner">
+<h1><a href="/creative-services/interactive-3d-dinosaur-video-wall/">Step into the Past with DinoStomp</a></h1>
+<h2>Visitors become part of the scene as their movements are mimicked by 3D rendered dinosaurs.</h2>
+<footer class="footer">
+<a class="read" href="/creative-services/interactive-3d-dinosaur-video-wall/">View Project</a>
+</footer>
+</div>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </li>
+
+        
+          <li class="slider item Left">
+
+            <article class="slider-item-article slide-1">
+
+              <img class="slider-spacer-image" src="/wp-content/uploads/2014/09/inka-1800x800-2.jpg">
+
+              <div class="slide-text-wrap">
+
+                <div class="slide-text-content Left">
+
+                    <div class="page-intro">
+<div class="page-intro-inner">
+<h1><a href="/creative-services/great-inka-road-exhibit/">The Great Inka Road</a></h1>
+<h2>Visitors to the Smithsonian National Museum of the American Indian Experience the City of Cusco.</h2>
+<footer class="footer">
+<a class="read" href="/creative-services/great-inka-road-exhibit/">View Project</a>
+</footer>
+</div>
+</div>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </li>
+
+        
+          <li class="slider item Right">
+
+            <article class="slider-item-article slide-2">
+
+              <img class="slider-spacer-image" src="/wp-content/uploads/2014/09/lowell-image-02.jpg">
+
+              <div class="slide-text-wrap">
+
+                <div class="slide-text-content Right">
+
+                    <div class="page-intro">
+<div class="page-intro-inner">
+<h1><a href="/creative-services/space-guard-academy-lowell-observatory/">Lowell Observatory</a></h1>
+<h2>Visitors become Space Guard cadets and learn all about asteroids.</h2>
+<footer class="footer">
+<a class="read" href="/creative-services/space-guard-academy-lowell-observatory/">View Project</a>
+</footer>
+</div>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </li>
+
+        
+      </ul>
+
+    </section>
+
+    <!-- end slides -->
+
+    
+    </header>
+
+    <nav id="mobile-slideout-menu" ideum-mobile-slideout-menu ng-cloak ng-show="open">
+
+      <header>
+
+        <h1>Menu</h1>
+
+        <button class="close" ng-click="close()"><i class="icon-close"></i></button>
+
+      </header>
+
+      <ul>
+                <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-16703"><a href="/">Home</a>
+                  </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16707"><a href="/blog/">Blog</a>
+                  </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16708 menu-item-has-children"><a href="/our-story/">Our Story</a>
+                      <ul class="sub">
+                              <li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16723"><a href="http://archive.ideum.com/our-story/mission/">Mission &#038; Values</a></li>
+                              <li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16738"><a href="http://archive.ideum.com/our-story/community/">Community</a></li>
+                              <li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16724"><a href="http://archive.ideum.com/our-story/services/">Services</a></li>
+                              <li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16725"><a href="http://archive.ideum.com/our-story/team/">Team</a></li>
+                              <li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16726"><a href="http://archive.ideum.com/our-story/facilities/">Facilities</a></li>
+                              <li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16727"><a href="http://archive.ideum.com/our-story/software-initiatives/">Software Initiatives</a></li>
+                              <li class="nav-sub-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-16728"><a href="http://archive.ideum.com/sprout/">Sprout</a></li>
+                          </ul>
+                  </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16710"><a href="/social-media-feed/">Social Media Feed</a>
+                  </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-30868"><a href="/creative-services/">Creative Services</a>
+                  </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16709"><a href="/touch-tables/">Multitouch Tables</a>
+                  </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16720"><a href="/touch-walls/">Touch Walls</a>
+                  </li>
+                <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-30873"><a href="https://www.ideum.com/contact">Contact</a>
+                  </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16711"><a href="/client-list/">Client List</a>
+                  </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16718"><a href="/customer-support/">Customer Support</a>
+                  </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16717"><a href="/legal/">Legal</a>
+                  </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16719"><a href="/jobs/">Jobs</a>
+                  </li>
+              </ul>
+
+    </nav>
+
+    <section id="content" role="main" class="content-wrapper slide-present">
+
+      <!--  -->
+
+      <div class="wrapper ">
+
+        
+<section class="our-creative-services front-page-featured-projects">
+
+  <div class="section-info">
+
+    <h1>
+      <a href="/creative-services/">Creative Services</a>
+    </h1>
+
+    <!-- content editable in WP via custom field on Home pg -->    
+          <div class="one-column-text">
+<h2 class="text-feature ">For more than 16 years, Ideum has excelled in creating compelling, technology-based interactive experiences for visitors around the world. We have worked with innovative aquariums and science centers, history museums, world-renowned art museums and cultural organizations, along with unique public spaces and iconic corporate brands.</h2><p>&nbsp;</p>
+</div>
+    
+  </div>
+
+  <ul class="slider project-wrap" rn-carousel rn-carousel-control rn-carousel-indicator rn-carousel-width="responsiveThreeUp()">
+
+    
+<!-- begin bar-recent-projects.twig -->
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/12/DinoStomp-Landing-427x427.jpg" alt="Image for the post: 'Interactive 3D Dinosaur Video Wall'" title="Image for the post: 'Interactive 3D Dinosaur Video Wall'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/interactive-3d-dinosaur-video-wall/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/interactive-3d-dinosaur-video-wall/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        3D
+      </h2>
+
+      <h1 class="title">
+                Step into the Past with DinoStomp
+              </h1>
+
+    </header>
+
+        <p>
+      Visitors become part of the scene as their movements are mimicked by 3D rendered dinosaurs
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/12/DinoLand-Landing-427x427.jpg" alt="Image for the post: 'DinoLand Immersive Activity Exhibit'" title="Image for the post: 'DinoLand Immersive Activity Exhibit'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/immersive-dinosaur-activity-exhibit/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/immersive-dinosaur-activity-exhibit/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        Exhibits
+      </h2>
+
+      <h1 class="title">
+                Explore DinoLand
+              </h1>
+
+    </header>
+
+        <p>
+      Visitor Created Dinosaurs Walk and Fly at the Fort Worth Museum of Science and History
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/09/MS_Landing.jpg" alt="Image for the post: 'Tap-A-Planet at Mystic Seaport'" title="Image for the post: 'Tap-A-Planet at Mystic Seaport'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/tap-planet-mystic-seaport/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/tap-planet-mystic-seaport/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        Astronomy
+      </h2>
+
+      <h1 class="title">
+                Tap-A-Planet
+              </h1>
+
+    </header>
+
+        <p>
+      Mystic Seaport visitors explore our solar system and beyond.
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/07/square-01.png" alt="Image for the post: 'Remembering the Vietnam War'" title="Image for the post: 'Remembering the Vietnam War'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/faces-with-names/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/faces-with-names/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        Exhibits
+      </h2>
+
+      <h1 class="title">
+                Remembering the Vietnam War
+              </h1>
+
+    </header>
+
+        <p>
+      Visitors to Sullivan Brothers Iowa Veterans Museum commemorate the fallen and learn about the Vietnam War. 
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/07/group-17.png" alt="Image for the post: 'Exploratorium and Kayseri Science Center'" title="Image for the post: 'Exploratorium and Kayseri Science Center'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/exploratorium-and-kayseri-science-center/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/exploratorium-and-kayseri-science-center/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        Custom Hardware
+      </h2>
+
+      <h1 class="title">
+                Exploratorium and Kayseri Science Center
+              </h1>
+
+    </header>
+
+        <p>
+      Ideum collaborated with Exploratorium Global Studios to create three custom interactives for the Kayseri Science Center in Turkey.
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/06/lowell_square.jpg" alt="Image for the post: 'Space Guard Academy at Lowell Observatory'" title="Image for the post: 'Space Guard Academy at Lowell Observatory'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/space-guard-academy-lowell-observatory/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/space-guard-academy-lowell-observatory/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        Astronomy
+      </h2>
+
+      <h1 class="title">
+                Space Guard Academy
+              </h1>
+
+    </header>
+
+        <p>
+      Visitors to Lowell Observatory become Space Guard Academy cadets and learn about asteroids through a series of interactives. 
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/06/square-image-01.png" alt="Image for the post: 'Interactive Coffee Traceability Prototype Experience'" title="Image for the post: 'Interactive Coffee Traceability Prototype Experience'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/interactive-coffee-traceability-prototype-experience/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/interactive-coffee-traceability-prototype-experience/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        Design
+      </h2>
+
+      <h1 class="title">
+                Interactive Coffee Traceability Prototype Experience
+              </h1>
+
+    </header>
+
+        <p>
+      Visitors to Roy Street Coffee & Tea explore Starbucks reserve coffees through tangible interaction
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/03/stopmotionsquare.jpg" alt="Image for the post: 'Stop Motion'" title="Image for the post: 'Stop Motion'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/stop-motion/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/stop-motion/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        Entertainment
+      </h2>
+
+      <h1 class="title">
+                Stop Motion
+              </h1>
+
+    </header>
+
+        <p>
+      Create mixed-reality stop motion animations on the Sprout by HP
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/02/IAIA_square-2.jpg" alt="Image for the post: 'Museum of Contemporary Native Arts'" title="Image for the post: 'Museum of Contemporary Native Arts'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/museum-contemporary-native-arts/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/museum-contemporary-native-arts/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        Art
+      </h2>
+
+      <h1 class="title">
+                Museum of Contemporary Native Arts
+              </h1>
+
+    </header>
+
+        <p>
+      Visitors explore MoCNA's textile collection and design their own textiles. 
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/02/louvre_square-2.jpg" alt="Image for the post: 'Curate Your Own Exhibition'" title="Image for the post: 'Curate Your Own Exhibition'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/curate-own-exhibition-crystal-bridges/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/curate-own-exhibition-crystal-bridges/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        Art
+      </h2>
+
+      <h1 class="title">
+                Curate Your Own Exhibition
+              </h1>
+
+    </header>
+
+        <p>
+      Crystal Bridges visitors design themed virtual galleries.
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/01/JCBsquare-2.jpg" alt="Image for the post: 'JCB Wine Tasting Experience'" title="Image for the post: 'JCB Wine Tasting Experience'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/jcb-wine-tasting-experience/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/jcb-wine-tasting-experience/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        Design
+      </h2>
+
+      <h1 class="title">
+                JCB Tasting Salon
+              </h1>
+
+    </header>
+
+        <p>
+      Revolutionary Touch Table Wine Tasting Experience
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<li class="slide project-item">
+    
+    <img src="/wp-content/uploads/2016/02/AP-2.png" alt="Image for the post: 'Austin Proper'" title="Image for the post: 'Austin Proper'"/>
+  
+  <div class="content-wrap"><a href="http://archive.ideum.com/creative-services/austin-proper/"></a></div>
+
+  <a class="content-wrap-faux" href="http://archive.ideum.com/creative-services/austin-proper/"><div class="content">
+
+    <header>
+
+      <h2 class="category">
+        3D
+      </h2>
+
+      <h1 class="title">
+                Austin Proper
+              </h1>
+
+    </header>
+
+        <p>
+      An interactive home-buying experience
+    </p>
+    
+  </div></a>
+
+</li>
+
+
+<!-- end bar-recent-projects.twig -->
+
+
+  </ul>
+
+  <div class="section-info">
+    
+    <p>
+      <a href="/creative-services/" class="button active">View All</a>
+    </p>
+    
+    <div class="one-column-text print-only">
+    	http://ideum.com/creative-services/
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- begin bar-featured-post.twig -->
+
+
+<section class="featured-blog-post post-style img-left">
+
+  <article class="content">
+
+    <div class="img-wrap" style="background-image:url(/wp-content/uploads/2017/05/Omeka_Full_1.jpg);">
+
+      <a href="http://archive.ideum.com/2017/06/05/connecting-mobile-apps-touch-tables/"><img class="hidden" src="/wp-content/uploads/2017/05/Omeka_Full_1.jpg" 
+      alt="Image for the post: 'The Hard Problem of Connecting Mobile Apps to Touch Tables'" title="Image for the post: 'The Hard Problem of Connecting Mobile Apps to Touch Tables'"></a>
+
+    </div>
+
+    <div class="txt-wrap">
+
+      <time class="time">June 5, 2017</time>
+      <!-- <a class="view" href="/blog/">View All</a> -->
+
+      <h1>
+        <a href="http://archive.ideum.com/2017/06/05/connecting-mobile-apps-touch-tables/">The Hard Problem of Connecting Mobile Apps to Touch Tables</A>
+      </h1>
+      
+      <!-- Limit to 160 characters -->
+      <p>        
+                Omeka Everywhere is an IMLS-funded project that has brought together Open Exhibits and Omeka to make collections more accessible to public in a variety of settings.
+              </p>
+      
+			<p class="print-only" style="margin-top:30px;">http://archive.ideum.com/2017/06/05/connecting-mobile-apps-touch-tables/</p>
+
+      <!-- begin hidden content for featured-blogpost-share -->
+      <div style="display:none;">
+        <div id="featured-blogpost-share" class="share-dialog">
+          <img class="ideum-icon" src="/wp-content/themes/ideum/images/logo.png" alt="Ideum" title="Ideum">
+          <p>Like what you see? Share this.</p>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/sharer.php?u=http://archive.ideum.com/2017/06/05/connecting-mobile-apps-touch-tables/" target="_blank"><img class="sharing-icon" 
+          src="/wp-content/themes/ideum/images/social/facebook.png" alt="Share on Facebook" title="Share on Facebook"></a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/share?url=http://archive.ideum.com/2017/06/05/connecting-mobile-apps-touch-tables/&amp;text=The Hard Problem of Connecting Mobile Apps to Touch Tables" target="_blank"><img class="sharing-icon" 
+          src="/wp-content/themes/ideum/images/social/twitter.png" alt="Tweet on Twitter" title="Tweet on Twitter"></a>
+          <!-- Google+ -->
+          <a href="https://plus.google.com/share?url=http://archive.ideum.com/2017/06/05/connecting-mobile-apps-touch-tables/" target="_blank"><img class="sharing-icon" 
+          src="/wp-content/themes/ideum/images/social/google.png" alt="Share on Google+" title="Share on Google+"></a>               
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://archive.ideum.com/2017/06/05/connecting-mobile-apps-touch-tables/" target="_blank"><img class="sharing-icon" 
+          src="/wp-content/themes/ideum/images/social/linkedin.png" alt="Share on LinkedIn" title="Share on LinkedIn"></a>
+          <!-- Pinterest -->
+          <!-- <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/pinterest.png" alt="Pin on Pinterest" title="Pin on Pinterest"></a> -->
+          <a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Farchive.ideum.com%2F2017%2F06%2F05%2Fconnecting-mobile-apps-touch-tables%2F&amp;media=http://archive.ideum.com/wp-content/uploads/2017/05/Omeka_Full_1.jpg&amp;description=The Hard Problem of Connecting Mobile Apps to Touch Tables" data-pin-do="buttonBookmark"  data-pin-shape="round" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/pinterest.png" alt="Pinterest"></a>
+        </div>
+      </div>
+      <!-- end hidden content for featured-blogpost-share - revealed when user clicks 'Share This' link (below)-->
+
+      <footer class="footer">
+        <a class="read" href="http://archive.ideum.com/2017/06/05/connecting-mobile-apps-touch-tables/">Read More</a>
+        <!-- <a class="tablet-n-desktop share inline" href="#featured-blogpost-share">Share This</a>
+        <a class="phone-only share share-dialog-phone" href="#featured-blogpost-share">Share This</a> -->
+        <a class="view" href="/blog/">View All</a>
+      </footer>
+
+    </div>
+
+  </article>
+
+</section>
+
+
+<!-- end bar-featured-post.twig -->
+
+
+
+
+
+<!-- begin bar-featured-products.twig -->
+
+<section class="featured-products" ng-init="productSliderIndex = 0">
+
+  <div class="section-info">
+
+    <h1>
+      Hardware Products
+    </h1>
+
+    <!-- content editable in WP via custom field on Home pg -->    
+          <div class="one-column-text center">
+<p>We offer a range of innovative, turnkey multitouch tables and touch walls that incorporate the latest technology. <br class="visible-desktop-only">We have been designing and building touch tables since 2008.</p>
+</div>
+    
+    <p>&nbsp;</p>
+
+    
+      
+      
+        <button class="pointer" ng-class="{active: productSliderIndex == 0}" ng-click="productSliderIndex = 0">Touch Tables</button>
+        
+        <div class="one-column-text print-only" style="float:left; margin-right:20px; width:auto;">
+        	http://archive.ideum.com/touch-tables/
+        </div>
+
+      
+        <button class="pointer" ng-class="{active: productSliderIndex == 1}" ng-click="productSliderIndex = 1">Touch Walls</button>
+        
+        <div class="one-column-text print-only" style="float:left; margin-right:20px; width:auto;">
+        	http://archive.ideum.com/touch-walls/
+        </div>
+
+      
+    
+  </div>
+
+  
+    <ul rn-carousel rn-carousel-index="productSliderIndex">
+
+    
+        <li class="featured-product post-style img-right product-slide" style="background-color:#ff7066; color:#ffffff;">
+
+          <article class="content">
+
+            <div class="img-wrap" style="background:url('/wp-content/uploads/2014/09/product-touch-tables-2.png') no-repeat bottom left;">
+
+              <a href="http://archive.ideum.com/touch-tables/"><img class="hidden" src="/wp-content/uploads/2014/09/product-touch-tables-2.png" 
+              alt="Image for the post: 'Touch Tables'" title="Image for the post: 'Touch Tables'"></a>
+
+            </div>
+
+            <div class="txt-wrap">
+
+              <h1>
+                <a href="http://archive.ideum.com/touch-tables/">Touch Tables</a>
+              </h1>
+              
+              <!-- Limit to 160 characters -->
+              <p>        
+                Our multitouch tables have 4K Ultra HD displays from 43” to 100” in size and use top of the line components from 3M, LG, Intel, and NVDIA. All of our touch tables are constructed out of aircraft-grade aluminum and are ready for any environment.
+
+              </p>
+
+              <!-- begin hidden content for touch-walls-share -->
+              <div style='display:none'>
+                <div id='touch-tables-share' class="share-dialog">
+                  <img class="ideum-icon" src="/wp-content/themes/ideum/images/logo.png" alt="Ideum" title="Ideum">
+                  <p>Like what you see? Share this.</p>
+                  <!-- Facebook -->
+                  <a href="https://www.facebook.com/sharer.php?u=http://archive.ideum.com/touch-tables/" target="_blank"><img class="sharing-icon" 
+                  src="/wp-content/themes/ideum/images/social/facebook.png" alt="Facebook"></a>
+                  <!-- Twitter -->
+                  <a href="https://twitter.com/share?url=http://archive.ideum.com/touch-tables/&amp;text=Ideum builds reliable, hardened touch tables with the best available components and exemplary service." target="_blank"><img class="sharing-icon" 
+                  src="/wp-content/themes/ideum/images/social/twitter.png" alt="Twitter"></a>
+                  <!-- Google+ -->
+                  <a href="https://plus.google.com/share?url=http://archive.ideum.com/touch-tables/" target="_blank"><img class="sharing-icon" 
+                  src="/wp-content/themes/ideum/images/social/google.png" alt="Google"></a>               
+                  <!-- LinkedIn -->
+                  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://archive.ideum.com/touch-tables/" target="_blank"><img class="sharing-icon" 
+                  src="/wp-content/themes/ideum/images/social/linkedin.png" alt="LinkedIn"></a>
+                  <!-- Pinterest -->
+                  <a href="//www.pinterest.com/pin/create/button/?url=http://archive.ideum.com/touch-tables/&amp;media=http://archive.ideum.com/wp-content/uploads/2014/09/OG-MultitouchTables1-2.jpg&amp;description=Our multitouch tables have 4K Ultra HD displays from 43” to 100” in size and use top of the line components from 3M, LG, Intel, and NVDIA. All of our touch tables are constructed out of aircraft-grade aluminum and are ready for any environment.
+" data-pin-do="buttonBookmark"  data-pin-shape="round" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/pinterest.png" alt="Pinterest"></a>       
+                </div>
+              </div>
+              <!-- end hidden content for touch-walls-share - revealed when user clicks 'Share This' link (below)-->
+
+              <footer class="footer">
+                <a class="read" href="http://archive.ideum.com/touch-tables/">Learn More</a>
+                <!-- <a class="tablet-n-desktop share inline" href="#touch-tables-share">Share This</a>
+                <a class="phone-only share share-dialog-phone" href="#touch-tables-share">Share This</a> -->
+              </footer>
+
+            </div>
+
+          </article>
+
+        </li>
+
+      
+        <li class="featured-product post-style img-left product-slide" style="background-color:#5ad3bf; color:#ffffff;">
+
+          <article class="content">
+
+            <div class="img-wrap" style="background:url('/wp-content/uploads/2014/09/product-touchwall-2.png') no-repeat top left;">
+
+              <a href="http://archive.ideum.com/touch-walls/"><img class="hidden" src="/wp-content/uploads/2014/09/product-touchwall-2.png" 
+              alt="Image for the post: 'Touch Walls'" title="Image for the post: 'Touch Walls'"></a>
+
+            </div>
+
+            <div class="txt-wrap">
+
+              <h1>
+                <a href="http://archive.ideum.com/touch-walls/">Touch Walls</a>
+              </h1>
+              
+              <!-- Limit to 160 characters -->
+              <p>        
+                Our Presenter touch walls range in size from 43” to 65” have 4K UHD resolution and use 3M touch technology. Our ruggedized displays have aluminum frames and can be purchased with low-profile integrated computers with Intel and NVDIA components.
+
+              </p>
+
+              <!-- begin hidden content for touch-walls-share -->
+              <div style='display:none'>
+                <div id='touch-walls-share' class="share-dialog">
+                  <img class="ideum-icon" src="/wp-content/themes/ideum/images/logo.png" alt="Ideum" title="Ideum">
+                  <p>Like what you see? Share this.</p>
+                  <!-- Facebook -->
+                  <a href="https://www.facebook.com/sharer.php?u=http://archive.ideum.com/touch-walls/" target="_blank"><img class="sharing-icon" 
+                  src="/wp-content/themes/ideum/images/social/facebook.png" alt="Facebook"></a>
+                  <!-- Twitter -->
+                  <a href="https://twitter.com/share?url=http://archive.ideum.com/touch-walls/&amp;text=Ideum builds reliable, hardened touch walls with the best available components and exemplary service." target="_blank"><img class="sharing-icon" 
+                  src="/wp-content/themes/ideum/images/social/twitter.png" alt="Twitter"></a>
+                  <!-- Google+ -->
+                  <a href="https://plus.google.com/share?url=http://archive.ideum.com/touch-walls/" target="_blank"><img class="sharing-icon" 
+                  src="/wp-content/themes/ideum/images/social/google.png" alt="Google"></a>               
+                  <!-- LinkedIn -->
+                  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://archive.ideum.com/touch-walls/" target="_blank"><img class="sharing-icon" 
+                  src="/wp-content/themes/ideum/images/social/linkedin.png" alt="LinkedIn"></a>
+                  <!-- Pinterest -->
+                  <a href="//www.pinterest.com/pin/create/button/?url=http://archive.ideum.com/touch-walls/&amp;media=http://archive.ideum.com/wp-content/uploads/2014/09/OG-Presenter-2.jpg&amp;description=Our Presenter touch walls range in size from 43” to 65” have 4K UHD resolution and use 3M touch technology. Our ruggedized displays have aluminum frames and can be purchased with low-profile integrated computers with Intel and NVDIA components.
+" data-pin-do="buttonBookmark"  data-pin-shape="round" target="_blank"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/pinterest.png" alt="Pinterest"></a>       
+                </div>
+              </div>
+              <!-- end hidden content for touch-walls-share - revealed when user clicks 'Share This' link (below)-->
+
+              <footer class="footer">
+                <a class="read" href="http://archive.ideum.com/touch-walls/">Learn More</a>
+                <!-- <a class="tablet-n-desktop share inline" href="#touch-walls-share">Share This</a>
+                <a class="phone-only share share-dialog-phone" href="#touch-walls-share">Share This</a> -->
+              </footer>
+
+            </div>
+
+          </article>
+
+        </li>
+
+      
+    </ul>
+
+  
+</section>
+
+<!-- end bar-featured-products.twig -->
+
+
+<section class="clients-n-partners" ng-init="clientSliderIndex = 0">
+
+  <div class="section-info textblock">
+
+    <h1>
+      <a href="/client-list/">Clients &amp; Partners</a>
+    </h1>
+
+    <!-- content editable in WP via custom field on Home pg -->    
+          <div class="one-column-text center"><p>We have collaborated with museums, cultural institutions, and Fortune 500 companies. <br class="visible-desktop-only">Our innovative hardware products have been sold to hundreds of organizations in 38 different countries around the world.</p></div>
+        
+    <div class="one-column-text print-only">
+    	http://ideum.com/client-list/
+    </div>
+
+  </div>
+
+  
+<!-- begin client-slider.twig -->
+
+<div class="section-info buttonblock screen-only">
+
+  <p>
+    <a href="/client-list/" class="button dark active">View Client List</a>
+  </p>
+
+</div>
+
+
+<!-- end client-slider.twig -->
+</section>
+
+
+<!-- end client-slider.twig -->
+
+
+
+  <section class="featured-pages">
+      
+    
+      
+    
+  </section>
+
+
+<!-- begin hidden content for home-share -->
+<div style='display:none'>
+  <div id='home-share' class="share-dialog">
+    <img class="ideum-icon" src="/wp-content/themes/ideum/images/logo.png" alt="Ideum" title="Ideum">
+    <p>Like what you see? Share this.</p>
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Farchive.ideum.com%2F" target="_blank"><img class="sharing-icon" 
+    src="/wp-content/themes/ideum/images/social/facebook.png" alt="Facebook"></a>
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=http://archive.ideum.com/&amp;text=Ideum - Exhibit Design + Multitouch Software and Hardware" target="_blank"><img class="sharing-icon" 
+    src="/wp-content/themes/ideum/images/social/twitter.png" alt="Twitter"></a>
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=http%3A%2F%2Farchive.ideum.com%2F" target="_blank"><img class="sharing-icon" 
+    src="/wp-content/themes/ideum/images/social/google.png" alt="Google"></a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Farchive.ideum.com%2F" target="_blank"><img class="sharing-icon" 
+    src="/wp-content/themes/ideum/images/social/linkedin.png" alt="LinkedIn"></a>
+    <!-- Pinterest -->
+    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img class="sharing-icon" src="/wp-content/themes/ideum/images/social/pinterest.png" alt="Pinterest"></a>
+    <!-- Tumblr-->
+    <a href="https://www.tumblr.com/share/link?url=http%3A%2F%2Farchive.ideum.com%2F" target="_blank"><img class="sharing-icon"  src="/wp-content/themes/ideum/images/social/tumblr.png" alt="Tumblr" /></a>
+  </div>
+</div>
+<!-- end hidden content for page-share - revealed when user clicks 'Share This Page' link in footer -->
+
+        
+         
+
+        <section class="chat foot-chat">
+
+          <div class="button">
+            <a href="/contact/">Ready to Start? <br class="phone-only gone">Contact Us.</a>
+          </div>
+
+        </section>
+        
+                
+      </div>
+       
+    </section>
+
+    
+      <footer id="footer" ng-controller="footerCtrl">
+          <div class="main">
+
+  <div class="mobile-controls">
+    <button class="sitemap" ng-click="toggleSitemap()" ng-class="{open: showSitemap}">
+      <span>Sitemap</span>
+      <i class="icon-caret-down"></i>
+    </button>
+    <button class="newsletter" ng-click="toggleNewsletter()" ng-class="{open: showNewsletter}">
+    <span>Newsletter</span>
+    <i class="icon-caret-down"></i>
+  </button>
+  </div>
+
+    <nav class="sitemap scroll-bottom" ng-show="showSitemap">
+    <ul>
+            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-16700"><a href="/creative-services/">Creative Services</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16704"><a href="/touch-tables/">Multitouch Tables</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16721"><a href="/touch-walls/">Touch Walls</a></li>
+            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-30874"><a href="https://www.ideum.com/contact">Contact</a></li>
+      
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16713"><a href="/blog/">Blog</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16715"><a href="/our-story/">Our Story</a></li>
+      
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16706"><a href="/client-list/">Client List</a></li>
+            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-16702"><a href="/customer-support/">Customer Support</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16722"><a href="/jobs/">Jobs</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16716"><a href="/legal/">Legal</a></li>
+                  <li class="page-share home 1">
+        <a class="phone-only share-dialog-phone" href="#home-share">Share This Page</a>
+      </li>
+        </ul>
+  </nav>
+
+    <nav class="footer-nav">
+    <ul>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16706"><a href="/client-list/">Client List</a></li>
+            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-16702"><a href="/customer-support/">Customer Support</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16722"><a href="/jobs/">Jobs</a></li>
+            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-16716"><a href="/legal/">Legal</a></li>
+            <li class="site-map-link">
+        <a href="/site-map/">Site Map</a>
+      </li>
+            <li class="page-share home 2">
+        <a class="tablet-n-desktop share-dialog-tab-desk" href="#home-share">Share This</a>
+        <a class="phone-only share-dialog-phone" href="#home-share">Share This</a>
+      </li>
+          </ul>
+    <p class="copyright">&copy; <a href="/">Ideum</a></p>
+  </nav>
+
+  <form
+    class="newsletter-signup scroll-bottom"
+    action="https://ideum.createsend.com/t/y/s/eihk/"
+    method="POST"
+    ng-show="showNewsletter"
+  >
+    <input type="hidden" name="name" value="Subscriber">
+    <label for="newsletter_signup_email">Newsletter Signup</label>
+    <div class="input-button-wrap">
+      <button class="newsletter-submit">Submit</button>
+      <input
+        type="email"
+        id="newsletter_signup_email"
+        class="email"
+        name="cm-eihk-eihk"
+        placeholder="Enter Your Email Here"
+      >
+    </div>
+  </form>
+
+</div>
+      </footer>
+      <script type='text/javascript' src='/wp-content/themes/ideum/js/vendor.js'></script>
+<script type='text/javascript' src='/wp-content/themes/ideum/js/site.js'></script>
+<script type='text/javascript' src='http://archive.ideum.com/wordpress/wp-includes/js/wp-embed.min.js?ver=4.7.3'></script>
+
+
+     
+
+    <div class="subfooter-scripts">
+
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-198125-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <!-- begin google conversion script -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 1072509777;
+      var google_conversion_language = "en";
+      var google_conversion_format = "3";
+      var google_conversion_color = "ffffff";
+      var google_conversion_label = "lKb-CJ638AIQ0ea0_wM";
+      var google_conversion_value = 0;
+      /* ]]> */
+    </script><script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js"></script>
+    <!-- end google conversion script -->
+
+    
+    </div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"330b5cbcfa","applicationID":"20709299","transactionName":"blFRbBMCW0UEB01dWFcbclsVClpYSgJLW1lNGUNZBgY=","queueTime":0,"applicationTime":547,"atts":"QhZSGlsYSEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>
