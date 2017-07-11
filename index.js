@@ -1,12 +1,12 @@
 var fs = require('fs');
 var toMarkdown = require('to-markdown');
 
-fs.readFile('ideum.html', 'utf8', function(err, data) {
+fs.readFile('index.html', 'utf8', function(err, data) {
   if (err) {
     return console.log(err);
   }
   md = toMarkdown(data);
-  fs.writeFile('test.md', md, function(err) {
+  fs.writeFile('markdown.md', md, function(err) {
     if (err) {
       return console.log(err);
     }
@@ -14,7 +14,7 @@ fs.readFile('ideum.html', 'utf8', function(err, data) {
   });
 });
 
-var test = fs.readFile('ideum.html', 'utf8', function(err, data) {
+var test = fs.readFile('index.html', 'utf8', function(err, data) {
   return toMarkdown(data);
 });
 
