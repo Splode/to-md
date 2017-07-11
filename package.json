@@ -4,7 +4,7 @@
   "description": "A system for converting HTML files to markdown.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node arg.js testDir/**.html ./test.md"
   },
   "keywords": [
     "markdown",
