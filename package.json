@@ -4,11 +4,11 @@
   "description": "A system for converting HTML files to markdown.",
   "main": "index.js",
   "scripts": {
-    "fm": "node front-matter.js news/*/**.html",
-    "md": "node markdown.js news/*/**.html",
-    "cat": "node concat.js news/*/**.html",
-    "clean": "node clean.js news/*/**.html",
-    "build": "npm run fm && npm run md && npm run cat && npm run clean"
+    "fm": "node lib/front-matter.js",
+    "md": "node lib/markdown.js",
+    "cat": "node lib/concat.js",
+    "clean": "node lib/clean.js",
+    "build": "npm-run-all fm md cat clean"
   },
   "keywords": [
     "markdown",
@@ -19,6 +19,7 @@
   "license": "ISC",
   "devDependencies": {
     "concat": "^1.0.3",
+    "glob": "^7.1.2",
     "jsdom": "^11.0.0",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
