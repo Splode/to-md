@@ -13,4 +13,4 @@ yarn-error.log*
 *.sln
 
 # Project specific files and directories
-news
+news/
